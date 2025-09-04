@@ -325,7 +325,7 @@
   .blueeee {
     width: 150px;
   }
-  .scroll-container, .desktop {
+  .scroll-container, .desktop, .caption{
     display: none;
   }
   .grid {
@@ -345,9 +345,6 @@
   }
 }
 @media (min-width: 1024px) {
-  .desktop {
-    display: block;
-  }
   .ground {
     height: 692px;
     display: flex;
@@ -371,9 +368,11 @@
     background-image: url(images/image3.jpg);
   }
   .desktop {
+  display: flex;
+  flex-direction: column; 
   width: 100%;
-  gap: 12px; 
-  }
+  gap: 12px;
+}
   .navigation1 {
   width: 100%;
   height: 44px;
@@ -404,7 +403,7 @@
     color: white;
   }
   .text1 {
-    height: 52px;
+    height: 40px;
     width: 100%;
     display: flex;
   }
