@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 /* mobile */
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
 .center {
   justify-content: center;
 }
@@ -329,7 +325,7 @@ body {
   .blueeee {
     width: 150px;
   }
-  .scroll-container, caption {
+  .scroll-container, .desktop {
     display: none;
   }
   .grid {
@@ -348,9 +344,19 @@ body {
   width: fit-content;
   }
 }
-@media (min-width: 1066px) {
+@media (min-width: 1024px) {
+  .desktop {
+    display: block;
+  }
   .ground {
     height: 692px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .ground1 {
     background: url(images/image1.jpg) no-repeat center center;
@@ -362,7 +368,7 @@ body {
     display: none;
   }
   .ground3 {
-    background-image: url(images/photo3.jpg);
+    background-image: url(images/image3.jpg);
   }
   .desktop {
   width: 100%;
@@ -371,21 +377,75 @@ body {
   .navigation1 {
   width: 100%;
   height: 44px;
+  display: flex;
   justify-content: space-around;
   } 
+  .photo {
+    height: 580px;
+  }
   .montserrat {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  color: #000000;
+  }
+  .framee1 {
+    padding-bottom: 525px;
+    height: 172px;
+    width: 405px;
   }
   .gap24 {
     gap: 24px;
     align-items: center;
   }
+  .font30 {
+    font-size: 52px;
+  }
+  .white {
+    color: white;
+  }
   .text1 {
     height: 52px;
     width: 100%;
+    display: flex;
+  }
+  .font36 {
+    font-size: 36px;
+  }
+  .font32 {
+    font-size: 32px;
+  }
+  .blue-text {
+    color: #2997ff;
+  }
+  .framee2 {
+    padding-bottom: 82px;
+  }
+  .airpod2 {
+    background-image: url(images/airpod2.jpg);
+  }
+  .watch1 {
+    background-image: url(images/watch1.jpg);
+  }
+  .framee3 {
+    padding-bottom: 421px;
+  }
+  .ipad {
+    background-image: url(images/Figure3.jpg);
+  }
+  .card {
+    background-image: url(images/card.jpg);
+  }
+  .blue-border {
+    width: 80px;
+  }
+  .scroll-container2 {
+  width: 100vw;
+  overflow: scroll;
+  display: flex;
+  }
+  .scroll2 {
+  width: fit-content;
+  display: flex;
   }
  
 }
