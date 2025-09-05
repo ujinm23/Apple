@@ -77,6 +77,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.gap12 {
+    gap:12px
+}
 .frame {
     height: 100px;
     display: flex;
@@ -84,19 +87,18 @@
     align-items: flex-start;
     align-self: stretch;
     align-items: center;
+     padding: 0 140px;
 }
+
 .space {
     justify-content: space-around;
 }
 .products {
     height: 146px;
-    width: 90%;
     display: flex;
     gap: 12px;
 }
-.padding {
-    padding: 0 140px;
-}
+
 .gap16 {
     gap: 16px;
 }
@@ -106,7 +108,6 @@
 }
 .frame2 {
     height: 558px;
-    width: 100%;
     display: flex;
     gap: 24px;
 }
@@ -114,7 +115,17 @@
     width: 313px;
     height: 500px;
     background-color: white;
+    border-radius: 18px;
 }
 .gap20 {
     gap: 20px;
 }
+.scroll-container {
+    display: flex;
+    width: 100vw;
+    overflow: scroll;
+}
+  .scroll {
+  width: fit-content;
+  display: flex;
+  }
